@@ -28,6 +28,7 @@
             event.preventDefault();
             if (score.value != "" && score.value <= 100) {
                 let audio;
+                audio= new Audio("E.mp3")
                 if (score.value >= 70) {
                     result.innerHTML = `${name.value} you have an <span style="font-weight:800; font-family: 'Nova Square', sans-serif; color: green;">A </span> congratulations`;
                     console.log(`${name.value} you have an A congratulations`);
